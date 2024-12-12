@@ -1,8 +1,8 @@
-import Drawer from "../components/drawer"; // Import the Drawer component
+import Drawer from "../components/drawer"; 
 import ChatPanel from "./chatscreen";
 import NavBar from "../components/navbar";
-import ReceiptList from "../components/receiptList"; // ReceiptList component
-import Header from "../components/header"; // Header component
+import ReceiptList from "../components/receiptList"; 
+import Header from "../components/header"; 
 import { useState } from "react";
 const Dashboard = () => {
     const [isChatOpen, setIsChatOpen] = useState(false);

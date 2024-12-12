@@ -6,15 +6,15 @@ const App = () => {
   return (
     <Router>
       <div className="relative h-screen bg-gray-100">
-        {/* Routes */}
+    \
         <Routes>
-          {/* Redirect to SplashScreen */}
+        \
           <Route path="*" element={<Navigate to="/" />} />
 
-          {/* SplashScreen Route */}
+          
           <Route path="/" element={<SplashScreen />} />
 
-          {/* Dashboard Route */}
+         
           <Route
             path="/dashboard"
             element={

@@ -4,13 +4,13 @@ import { useEffect, useState } from "react";
 const ChatInput = ({ sendMessage, inputValue, setInputValue }) => {
   const [isKeyboardOpen, setIsKeyboardOpen] = useState(false);
 
-  // Detect when the virtual keyboard is opened on mobile devices
+ 
   useEffect(() => {
     const handleResize = () => {
       const screenHeight = window.innerHeight;
       const viewportHeight = document.documentElement.clientHeight;
 
-      // When the viewport height is less than the screen height, assume the keyboard is open
+    
       setIsKeyboardOpen(viewportHeight < screenHeight);
     };
 

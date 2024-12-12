@@ -29,7 +29,7 @@ const ChatHeader = ({ activeTab, setActiveTab, onClose }) => {
 
       {/* Close Button */}
       <button
-        onClick={onClose} // Use the onClose function to close the chat panel
+        onClick={onClose} 
         className="text-white text-xl  rounded-full p-2 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110"
       >
         ✕

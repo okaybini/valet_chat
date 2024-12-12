@@ -59,8 +59,8 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
 };
 
 Drawer.propTypes = {
-  isOpen: PropTypes.bool.isRequired, // Ensure isOpen is a boolean and required
-  toggleDrawer: PropTypes.func.isRequired, // Ensure toggleDrawer is a function and required
+  isOpen: PropTypes.bool.isRequired, 
+  toggleDrawer: PropTypes.func.isRequired, 
 };
 
 export default Drawer;

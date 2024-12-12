@@ -37,7 +37,7 @@ const ChatMessages = ({ messages, isTyping }) => {
         </div>
       ))}
 
-      {/* Typing Animation */}
+     
       {isTyping && (
         <div className="flex items-start space-x-3">
           {/* Assistant Icon */}
@@ -46,7 +46,7 @@ const ChatMessages = ({ messages, isTyping }) => {
           </div>
 
           {/* Typing Indicator */}
-          <div className="flex space-x-1 items-center mt-1"> {/* Add mt-1 for slight downward adjustment */}
+          <div className="flex space-x-1 items-center mt-1"> 
   <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
   <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
   <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>

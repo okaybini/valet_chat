@@ -18,10 +18,10 @@ const ChatPanel = ({ onClose }) => {
     { id: 2, name: "Receipt_02.pdf", synced: false },
     { id: 3, name: "Receipt_03.pdf", synced: true },
   ]);
-  const [isVisible, setIsVisible] = useState(false); // Track visibility for animation
+  const [isVisible, setIsVisible] = useState(false); 
 
   useEffect(() => {
-    setIsVisible(true); // Trigger fade-in effect when the component mounts
+    setIsVisible(true); 
   }, []);
 
   const addMessage = (text, sender) => {

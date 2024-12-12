@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
-import logo from "../assets/logo.jpg"; // Import your logo
+import { useNavigate } from "react-router-dom"; 
+import logo from "../assets/logo.jpg"; 
 
 const SplashScreen = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate(); 
 
   const handleOpenModal = () => {
     setIsModalVisible(true);
@@ -15,16 +15,16 @@ const SplashScreen = () => {
   };
 
   const handleSignUpComplete = () => {
-    // Close modal and navigate to Dashboard
+
     setIsModalVisible(false);
-    navigate("/dashboard"); // Navigate to /dashboard
+    navigate("/dashboard"); 
   };
 
   return (
     <div className="relative h-screen bg-black">
-      {/* Centered Content */}
+      
       <div className="flex flex-col items-center justify-center h-full">
-        {/* Logo */}
+       
         <img
           src={logo}
           alt="Logo"
@@ -52,15 +52,15 @@ const SplashScreen = () => {
         className={`fixed inset-0 bg-black/60 z-50 transition-opacity duration-500 flex items-end ${
           isModalVisible ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
-        onClick={handleCloseModal} // Close modal when clicking outside
+        onClick={handleCloseModal} 
       >
         <div
           className={`bg-white rounded-t-lg p-6 shadow-lg w-full max-w-lg mx-auto transform transition-transform duration-500 ${
             isModalVisible ? "translate-y-0" : "translate-y-full"
           }`}
-          onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
+          onClick={(e) => e.stopPropagation()} 
         >
-          {/* Close Button */}
+          
           <button
             onClick={handleCloseModal}
             className="text-gray-500 hover:text-gray-800 float-right text-xl"
@@ -72,9 +72,9 @@ const SplashScreen = () => {
           <div className="text-center">
             <h2 className="text-2xl font-bold text-black mb-4">Sign Up</h2>
             <div className="flex flex-col space-y-4">
-              {/* Sign-Up Option */}
+         
               <button
-                onClick={handleSignUpComplete} // Navigate to Dashboard
+                onClick={handleSignUpComplete}
                 className="flex items-center justify-center space-x-2 border border-gray-300 rounded-lg px-4 py-2 hover:bg-gray-100"
               >
                 <img
@@ -85,7 +85,7 @@ const SplashScreen = () => {
               </button>
             </div>
 
-            {/* Footer */}
+     
             <p className="mt-6 text-sm text-gray-500">
               Right now, we only support Gmail, but others are coming soon.
             </p>
